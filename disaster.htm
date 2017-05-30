@@ -120,8 +120,8 @@
 </ul>
 
 </article></section></slide>
-<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
-<h1>多可用区SLB和单可用区SLB的区别是什么</h1>
+<slide class="slide"><section class="slide-wrapper"><article>
+<h2>多可用区SLB和单可用区SLB的区别是什么</h2>
 <ul class="bounceIn">
 <li>单可用区的SLB，如果可用区A内的所有路由器全都挂掉，此时可用区内的容灾就失效了</li>
 <li>多可用区的SLB，可用区A挂掉的情况，具体做法将流量切换到另外一个可用区B，由于存在主备关系，可用区B也有这些转发规则，业务的流量也是不受影响的，可以通过可用区B里的SLB提供服务</li>
@@ -129,8 +129,8 @@
 </ul>
 
 </article></section></slide>
-<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
-<h1>多可用区RDS和单可用区RDS的区别是什么</h1>
+<slide class="slide"><section class="slide-wrapper"><article>
+<h2>多可用区RDS和单可用区RDS的区别是什么</h2>
 <ul class="moveIn">
 <li>RDS单可用区是指RDS实例的主备节点处于相同的可用区，有效控制云产品间的网络延迟</li>
 <li>多可用区是指RDS实例的主备节点位于不同的可用区，当主节点所在可用区出现故障（如机房断电等），RDS进行主备切换后，会切换到备节点所在的可用区继续提供服务。多可用区的RDS轻松实现了同城容灾</li>
@@ -201,8 +201,7 @@ MixJS.loadJS('highlight/highlight.pack.js',function(){
     hljs.initHighlightingOnLoad();
 });
 </script>
-<script src="./js/demo.js"></script>
-/css/demo.css -->
+
 
 <!--placeholder-->
 </body>
