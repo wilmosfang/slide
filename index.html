@@ -1,0 +1,103 @@
+
+<!--
+    Powered By nodePPT
+    version: 1.4.2
+    site: https://github.com/ksky521/nodePPT
+-->
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>nodePPT List</title>
+    <style>
+    body{
+        width: 900px;
+        margin: 0 auto;
+        color: #2C3E50;
+    }
+    a{
+        color:#4fc3f7;
+        text-decoration: none;
+    }
+    ol, li{
+        list-style:none;
+        padding:0;
+        margin:0;
+    }
+    ol{
+        -webkit-text-shadow: 1px 1px 1px rgba(201, 201, 201, 0.5);
+        -moz-text-shadow: 1px 1px 1px rgba(201, 201, 201, 0.5);
+        -ms-text-shadow: 1px 1px 1px rgba(201, 201, 201, 0.5);
+        -o-text-shadow: 1px 1px 1px rgba(201, 201, 201, 0.5);
+        text-shadow: 1px 1px 1px rgba(201, 201, 201, 0.5);
+    }
+    li{
+        font-size: 110%;
+        font-weight: bold;
+        padding: .75em 0;
+        border-bottom:1px dashed #ccc;
+    }
+    li:hover{
+        background-color: #eee;
+    }
+
+    .copyright{
+        font-weight: normal;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        line-height: 24px;
+        position: fixed;
+        bottom: 0.5em;
+        right: 0.5em;
+        margin-left: -74px;
+    }
+    .copyright a{
+        color: #ea7373;
+    }
+    ol a.mult-link, ol a.socket-link{
+        margin: 0 15px;
+    }
+    ol a.mult-link:before, ol a.socket-link:before{
+        content: '[ ';
+        color: black;
+    }
+    ol a.mult-link:after, ol a.socket-link:after{
+        content: ' ]';
+        color: black;
+    }
+    ol a.socket-link{
+        margin: 0 ;
+    }
+    </style>
+    <script>
+    // 百度统计代码
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?{{site.baidu_tongji_id}}";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+    <script>
+    // google analytics
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', '{{site.google_analytics_id}}', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+</head>
+<body>
+    <ol>
+        <li> <a class="star" href="/disaster.htm" target="_blank">灾备</a><a href="/disaster.htm?_multiscreen=1" target="_blank" title="多窗口打开" class="mult-link">多窗口</a><a href="/disaster.htm?controller=socket" target="_blank" title="用socket远程控制" class="socket-link">2017-05-30</a></li>
+	<li><a class="star" href="/new_retail.htm" target="_blank">新零售</a><a href="/new_retail.htm?_multiscreen=1" target="_blank" title="多窗口打开" class="mult-link">多窗口</a><a href="/new_retail.htm?controller=socket" target="_blank" title="用socket远程控制" class="socket-link">2017-05-16</a></li>
+    </ol>
+    <h4 class="copyright">Powered by <a title="使用NodePPT" href="https://github.com/ksky521/nodePPT" target="_blank">NodePPT 1.4.2</a></h4>
+</body>
+</html>
+

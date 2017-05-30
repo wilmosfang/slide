@@ -1,0 +1,209 @@
+<!--
+    Powered By nodePPT - This is probably the best web presentation tool so far!
+    version: 1.4.2
+    site: https://github.com/ksky521/nodePPT
+    date: 2017年5月27日
+-->
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>灾备 - By 小麦草</title>
+    <link rel="stylesheet" media="all" href="./css/nodeppt.css">
+    <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="./css/phone.css">
+    
+    <link rel="stylesheet" href="./js/highlight/styles/monokai_sublime.css">
+    <link rel="stylesheet" href="./css/font-awesome.css">
+    
+<link rel="stylesheet" href="./css/theme.dark.css">
+</head>
+<body>
+<div class="slides">
+    <slides id="container">
+        <slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
+<h1>灾备九问</h1>
+<h2>演讲者：小麦草</h2>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>常见的灾难场景有哪些</h1>
+<ul class="bounceIn">
+<li><p>地震 洪涝 台风 暴雨 雷电 海啸</p>
+</li>
+<li><p>火灾 人为失误 黑客攻击 恐怖袭击 爆炸</p>
+</li>
+</ul>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>常见的灾难场景会导致哪两类后果</h1>
+<ul class="rollIn">
+<li>业务中断</li>
+<li>数据丢失</li>
+</ul>
+
+</article></section></slide>
+<slide class="slide"   data-on-build="Slide.magic" data-on-enter="Slide.magic.init"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>灾备的定义是什么</h1>
+<div class="magic"><div class="magicItem current pagedown"  data-transition="newspaper"><article>
+<div class="magic-wrapper">
+<article>
+<ul>
+<li>数据灾备全称为数据灾难备份，是指为防止出现操作失误或系统故障导致数据丢失，而将全系统或部分数据集合，从应用主机的硬盘或阵列复制到其他存储介质的过程</li>
+</ul>
+
+</article>
+</div>
+</article></div>
+<div class="magicItem next pagedown"  data-transition="newspaper"><article>
+<div class="magic-wrapper">
+<article>
+<ul>
+<li>灾难备援，它是指利用科学的技术手段和方法，提前建立系统化的数据应急方式，以应对灾难的发生。其内容包括数据备份和系统备份，业务连续规划、人员架构、通信保障、危机公关，灾难恢复规划、灾难恢复预案、业务恢复预案、紧急事件响应、第三方合作机构和供应链危机管理等等</li>
+</ul>
+
+</article>
+</div>
+</article></div></div>
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>备份的分类有哪些</h1>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><hgroup>
+<h2>根据备份量</h2>
+
+</hgroup><article>
+
+<ul class="bounceIn">
+<li>完全备份(full backup)</li>
+<li>差分备份(differential backup)</li>
+<li>增量备份(incremental backup)</li>
+<li>按需备份(Synthetic Full Backup)</li>
+</ul>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><hgroup>
+<h2>根据状态</h2>
+
+</hgroup><article>
+
+<ul class="fadeIn">
+<li>脱机(offline) 也叫冷备</li>
+<li>联机(online) 也叫热备</li>
+</ul>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>容灾的分类有哪些</h1>
+<ul class="rollIn">
+<li>数据级容灾</li>
+<li>应用级容灾</li>
+<li><p>业务级容灾</p>
+</li>
+<li><p><a href="http://www.suninfo.com/view-2384.html" target="_blank">引申阅读:数据容灾的分类及三种常用技术</a></p>
+</li>
+</ul>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>RTO的定义是什么</h1>
+<ul class="zoomIn">
+<li>RTO (Recovery Time Objective，复原时间目标)是企业可容许服务中断的时间长度</li>
+</ul>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>RPO的定义是什么</h1>
+<ul class="zoomIn">
+<li>RPO (Recovery Point Objective，复原点目标)是指当服务恢复后，恢复得来的数据所对应的事务点</li>
+</ul>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>多可用区SLB和单可用区SLB的区别是什么</h1>
+<ul class="bounceIn">
+<li>单可用区的SLB，如果可用区A内的所有路由器全都挂掉，此时可用区内的容灾就失效了</li>
+<li>多可用区的SLB，可用区A挂掉的情况，具体做法将流量切换到另外一个可用区B，由于存在主备关系，可用区B也有这些转发规则，业务的流量也是不受影响的，可以通过可用区B里的SLB提供服务</li>
+<li>可用区间的容灾就是处理整个可用区A挂掉的情况</li>
+</ul>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>多可用区RDS和单可用区RDS的区别是什么</h1>
+<ul class="moveIn">
+<li>RDS单可用区是指RDS实例的主备节点处于相同的可用区，有效控制云产品间的网络延迟</li>
+<li>多可用区是指RDS实例的主备节点位于不同的可用区，当主节点所在可用区出现故障（如机房断电等），RDS进行主备切换后，会切换到备节点所在的可用区继续提供服务。多可用区的RDS轻松实现了同城容灾</li>
+</ul>
+
+</article></section></slide>
+        
+
+        <!-- <slide class="slide logoslide dark nobackground">
+            <article class="flexbox vcenter">
+                <h2 style="color: white;">Powered By nodePPT v1.4.2</h2>
+            </article>
+        </slide> -->
+        <div class="slideTip" id="tip"></div>
+    </slides>
+</div>
+<canvas id="drawBoard" class="draw-board" width="900" height="700"></canvas>
+<div class="progress"><span id="progress"></span></div>
+<div id="_buttons">
+    <div class="_btn-box" id="_btn-box" style="display:none;">
+        <button class="fa fa-arrow-circle-left" id="_btn-prev"></button>
+        <button class="fa fa-arrow-circle-right" id="_btn-next"></button>
+        <button class="fa fa-paint-brush" id="_btn-brush"></button>
+        <button class="fa fa-compress" id="_btn-overview" data-toggle="fa fa-expand"></button>
+    </div>
+    <button class="fa fa-bars" id="_btn-bar"  data-toggle="fa fa-close"></button>
+</div>
+<script src="./js/mixjs/lib/mix.0.3.0.min.js"></script>
+<script>
+var base = location.protocol + '//' + location.host;
+
+var path = (location.pathname + '#').split('/').filter(function(v){
+    return !!v;
+});
+path.pop();
+path = path.join('/');
+MixJS.config({
+    baseURL: [ base, path, 'js'].join('/')+'/'
+});
+
+</script>
+<script src="./js/mixjs/lib/event/broadcast.js"></script>
+<script src="./js/nodeppt.js"></script>
+<script>
+Slide.init({
+    containerID: 'container',
+    drawBoardID: 'drawBoard',
+    slideClass: '.slide',
+    buildClass: '.build',
+    progressID: 'progress',
+    transition: 'horizontal3d',
+    width: 1100,
+    dir: './',
+    
+    //打开下面的注释就开启postMessage方式
+    //访问网址127.0.0.1:8080/ppt/demo#client
+    control:{
+        type: 'postMessage',
+        args:{
+            isControl:  false
+        }
+    },
+    
+    tipID: 'tip'
+});
+MixJS.loadJS('highlight/highlight.pack.js',function(){
+    hljs.tabReplace = '  ';
+    hljs.initHighlightingOnLoad();
+});
+</script>
+<script src="./js/demo.js"></script>
+/css/demo.css -->
+
+<!--placeholder-->
+</body>
+</html>
